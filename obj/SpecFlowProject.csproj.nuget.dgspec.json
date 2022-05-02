@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj": {}
+    "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj": {
+    "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
+        "projectUniqueName": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
         "projectName": "SpecFlowProject",
-        "projectPath": "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
+        "projectPath": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
         "packagesPath": "C:\\Users\\ahresik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\obj\\",
+        "outputPath": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ahresik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,15 +66,15 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[4.1.1, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[4.1.1, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[100.0.4896.6000, )"
+              "version": "[101.0.4951.4100, )"
             },
             "SpecFlow": {
               "target": "Package",
@@ -116,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

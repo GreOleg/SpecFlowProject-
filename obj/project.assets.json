@@ -623,10 +623,10 @@
           }
         }
       },
-      "Selenium.Support/4.1.0": {
+      "Selenium.Support/4.1.1": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "4.1.0"
+          "Selenium.WebDriver": "4.1.1"
         },
         "compile": {
           "lib/net5.0/WebDriver.Support.dll": {}
@@ -635,7 +635,7 @@
           "lib/net5.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/4.1.0": {
+      "Selenium.WebDriver/4.1.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
@@ -647,7 +647,7 @@
           "lib/net5.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/100.0.4896.6000": {
+      "Selenium.WebDriver.ChromeDriver/101.0.4951.4100": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
@@ -2880,10 +2880,10 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.Support/4.1.0": {
-      "sha512": "wuK5cfgVaimOZqyuriY2geGpNsI9DWky8CuBlrkBnmebkSrRftxqwyUVy0NLooHaAB2iaMj7qM+VOdUEX5bCHQ==",
+    "Selenium.Support/4.1.1": {
+      "sha512": "jxvHv+0KmovNeqBuWF0eAGdIt6MLCwdyZB4R569nppEZyityqhwmT2YXEXtGeqBCviGT0pfAhy1lyM4T5gaBIQ==",
       "type": "package",
-      "path": "selenium.support/4.1.0",
+      "path": "selenium.support/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2895,14 +2895,14 @@
         "lib/net5.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.dll",
         "lib/netstandard2.1/WebDriver.Support.dll",
-        "selenium.support.4.1.0.nupkg.sha512",
+        "selenium.support.4.1.1.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.1.0": {
-      "sha512": "d4smisz4a/wJCM2TzkKTl+BLfvZUTvaobhKElDfCVZlvY8ThsC8VAoBNWTlg1H/GGzIP//yVGko/W0FILTgkYA==",
+    "Selenium.WebDriver/4.1.1": {
+      "sha512": "lUPsSZMoIcDxB5tlppSPUUTMsaZovuUv/rXyYlroM0L3kl32cedOWbZ4m/hbJe9f24JlOqkPG8GX4gS35S+vSw==",
       "type": "package",
-      "path": "selenium.webdriver/4.1.0",
+      "path": "selenium.webdriver/4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2914,14 +2914,14 @@
         "lib/net5.0/WebDriver.dll",
         "lib/netstandard2.0/WebDriver.dll",
         "lib/netstandard2.1/WebDriver.dll",
-        "selenium.webdriver.4.1.0.nupkg.sha512",
+        "selenium.webdriver.4.1.1.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/100.0.4896.6000": {
-      "sha512": "ttUzQ+lgWSifCMhw1MGUf4eFt9Vh88O1mua58huh5zLMZdqa/Wrh+lQGZnZrcvoifq85fWx7ESlbl57iPDaJ+w==",
+    "Selenium.WebDriver.ChromeDriver/101.0.4951.4100": {
+      "sha512": "S/IPXjVlR1JPNzsZsOiBkGFHyv+KYhDEAh0cGzxVvhnd4VFo8iI+HGye8R58ec/6lUoFMw6e/Y/OvFAJElqmbA==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/100.0.4896.6000",
+      "path": "selenium.webdriver.chromedriver/101.0.4951.4100",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2932,7 +2932,7 @@
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.100.0.4896.6000.nupkg.sha512",
+        "selenium.webdriver.chromedriver.101.0.4951.4100.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -5915,9 +5915,9 @@
       "NLog >= 4.7.15",
       "NUnit3TestAdapter >= 4.2.1",
       "Newtonsoft.Json >= 13.0.1",
-      "Selenium.Support >= 4.1.0",
-      "Selenium.WebDriver >= 4.1.0",
-      "Selenium.WebDriver.ChromeDriver >= 100.0.4896.6000",
+      "Selenium.Support >= 4.1.1",
+      "Selenium.WebDriver >= 4.1.1",
+      "Selenium.WebDriver.ChromeDriver >= 101.0.4951.4100",
       "SpecFlow >= 3.9.69",
       "SpecFlow.Assist.Dynamic >= 1.4.2",
       "SpecFlow.NUnit >= 3.9.69",
@@ -5926,24 +5926,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahresik\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ahresik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
+      "projectUniqueName": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
       "projectName": "SpecFlowProject",
-      "projectPath": "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
+      "projectPath": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
       "packagesPath": "C:\\Users\\ahresik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahresik\\Documents\\mentoring-tasks-project\\SpecFlowProject\\obj\\",
+      "outputPath": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\ahresik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5995,15 +5990,15 @@
           },
           "Selenium.Support": {
             "target": "Package",
-            "version": "[4.1.0, )"
+            "version": "[4.1.1, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.1.0, )"
+            "version": "[4.1.1, )"
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[100.0.4896.6000, )"
+            "version": "[101.0.4951.4100, )"
           },
           "SpecFlow": {
             "target": "Package",
@@ -6041,7 +6036,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

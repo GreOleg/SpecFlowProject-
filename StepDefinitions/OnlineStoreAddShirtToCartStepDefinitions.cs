@@ -8,14 +8,7 @@ namespace SpecFlowProject.StepDefinitions
     [Binding]
     class OnlineStoreAddShirtToCartStepDefinitions
     {
-        IWebDriver driver;
-
-        [BeforeScenario]
-        public void BeforEvryScenario()
-        {
-            BrowserDriver.InitBrowser();
-            driver = BrowserDriver.Driver;
-        }
+        IWebDriver driver = BrowserDriver.Driver;
 
         [Given(@"Start the browser with Online Store")]
         public void GivenStartTheBrowserWithOnlineStore()
@@ -70,12 +63,6 @@ namespace SpecFlowProject.StepDefinitions
         public void AssertForElementWithText(string successTitle)
         {
             driver.FindElement(By.XPath($"//h2[normalize-space()='{successTitle}']")).Text.Equals(successTitle);
-        }
-
-        [AfterScenario]
-        public void AfterEvryScenario()
-        {
-            BrowserDriver.CloseBrowser();
         }
     }
 }
