@@ -10,58 +10,53 @@ namespace SpecFlowProject.StepDefinitions
     {
         IWebDriver driver = BrowserDriver.Driver;
 
-        [Given(@"Start the browser with Online Store")]
-        public void GivenStartTheBrowserWithOnlineStore()
+        [Given(@"I open the App")]
+        public void GivenOpenApp()
         {
             driver.Navigate().GoToUrl(@"http://automationpractice.com/index.php");
         }
 
-        [When(@"In the Search field, enter the value is (.*)")]
-        public void WhenInTheSearchFieldEnterTheValue(string searchItem)
+        [When("I enter the \"(.*?)\" in the Search field")]
+        public void WhenEnterSearchItem(string searchItem)
         {
             WElement.Element(By.XPath("//input[@id='search_query_top']")).InputText(searchItem);
         }
 
-        [Then("Wait for the element under Search with the text is (.*) to appear")]
-        public void WaitTheElementToAppear(string searchItem)
+        [Then("I expect for the element search tooltip \"(.*?)\" to appear")]
+        public void ThenExpectElementIntoTooltip(string searchItem)
         {
             WElement.Element(By.XPath($"//li[contains(text(),'{searchItem}')]")).WaitElement();
         }
 
-        [When(@"Click on the element under Search with the text is (.*)")]
-        public void ClickTheElementWithText(string searchItem)
+        [When("I click on the element search tooltip \"(.*?)\"")]
+        public void WhenClickElementIntoTooltip(string searchItem)
         {
             WElement.Element(By.XPath($"//li[contains(text(),'{searchItem}')]")).EClick();
         }
 
-        [When("Wait for the product page to appear")]
-        public void WaitForProductPageToAppear()
+        [Then(@"I expect for the product page to appear")]
+        public void ThenExpectProductPageToAppear()
         {
             WElement.Element(By.XPath("//body[@id='product']")).WaitElement();
         }
 
-        [Then("Assert that the product name is (.*)")]
-        public void AssertProductName(string actualProductName)
+        [Then("I expect that the product name is \"(.*?)\"")]
+        public void ThenExpectProductName(string actualProductName)
         {
             string productTitle = driver.FindElement(By.XPath($"//h1[contains(text(),'{actualProductName}')]")).Text;
             Assert.AreEqual(productTitle, actualProductName);
         }
 
-        [When("Click on the Add to cart button")]
-        public void ClickAddToCartBtn()
+        [When(@"I click on the Add to cart button")]
+        public void WhenClickAddToCartBtn()
         {
             WElement.Element(By.XPath("//p[@id='add_to_cart']/button")).EClick();
         }
 
-        [When("Wait for the element with the text is (.*) to appear on page")]
-        public void WaitForElementWithText(string successTitle)
+        [Then("I expect for the element with the text is \"(.*?)\"")]
+        public void ThenExpectElementWithText(string successTitle)
         {
             WElement.Element(By.XPath($"//h2[normalize-space()='{successTitle}']")).ExpectedConditionsElement();
-        }
-
-        [Then("Assert for the element with the text is (.*)")]
-        public void AssertForElementWithText(string successTitle)
-        {
             driver.FindElement(By.XPath($"//h2[normalize-space()='{successTitle}']")).Text.Equals(successTitle);
         }
     }
