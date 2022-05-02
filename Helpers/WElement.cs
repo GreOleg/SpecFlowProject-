@@ -14,7 +14,7 @@ namespace SpecFlowProject.Helpers
         {
             this.selector = selector;
         }
-        public static WElement Element(By selector)
+        public static WElement Find(By selector)
         {
             return new WElement(selector);
         }
