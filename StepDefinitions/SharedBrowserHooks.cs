@@ -3,7 +3,7 @@
 namespace SpecFlowProject.StepDefinitions
 {
     [Binding]
-    internal class BaseTestClass
+    internal class SharedBrowserHooks
     {
         [BeforeScenario]
         public void BeforEvryScenario()

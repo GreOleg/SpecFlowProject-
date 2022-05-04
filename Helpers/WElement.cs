@@ -32,6 +32,16 @@ namespace SpecFlowProject.Helpers
             new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementToBeClickable(selector));
             driver.FindElement(selector).SendKeys(text);
         }
+        public void InputNumber(int num, int waitInterval = 10)
+        {
+            new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementToBeClickable(selector));
+            driver.FindElement(selector).SendKeys(num.ToString());
+        }
+        public void InputNumber(decimal num, int waitInterval = 10)
+        {
+            new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementToBeClickable(selector));
+            driver.FindElement(selector).SendKeys(num.ToString());
+        }
         public void WaitElement(int waitInterval = 10)
         {
             try
@@ -52,8 +62,8 @@ namespace SpecFlowProject.Helpers
         }
         public void ExpectedConditionsElement(int waitInterval = 20)
         {
-            new WebDriverWait(BrowserDriver.Driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementIsVisible(selector));
-            new WebDriverWait(BrowserDriver.Driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementToBeClickable(selector));
+            new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementIsVisible(selector));
+            new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementToBeClickable(selector));
         }
     }
 }
