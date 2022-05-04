@@ -1,5 +1,6 @@
 ﻿using NLog;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 
@@ -7,16 +8,18 @@ namespace SpecFlowProject.Helpers
 {
     class WElement
     {
-        public static IWebDriver driver = BrowserDriver.Driver;
-        private By selector;
+        //public static IWebDriver driver = BrowserDriver.Driver;
 
-        public WElement(By selector)
+        private By selector;
+        private readonly IWebDriver driver;
+        public WElement(By selector, IWebDriver driver)
         {
             this.selector = selector;
+            this.driver = driver;
         }
-        public static WElement Find(By selector)
+        public static WElement Find(By selector, IWebDriver driver)
         {
-            return new WElement(selector);
+            return new WElement(selector, driver);
         }
         public void EClick(int countOfClicks = 1, int waitInterval = 10)
         {

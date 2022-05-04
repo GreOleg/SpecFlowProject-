@@ -8,7 +8,12 @@ namespace SpecFlowProject.StepDefinitions
     [Binding]
     internal class CalculatorStepDefinitions
     {
-        IWebDriver driver = BrowserDriver.Driver;
+        private readonly IWebDriver driver;
+
+        public CalculatorStepDefinitions(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
 
         [Given(@"I open the Calculator")]
         public void GivenOpenApp()
@@ -19,25 +24,25 @@ namespace SpecFlowProject.StepDefinitions
         [Given("I have entered first value is (.*) into the calculator")]
         public void GivenEnterFirstNum(string num)
         {
-            WElement.Find(By.XPath("//input[@id='input']")).InputText(num);
+            WElement.Find(By.XPath("//input[@id='input']"), driver).InputText(num);
         }
 
         [Given("I press (.*)")]
         public void GivenPressActionBtn(string action)
         {
-            WElement.Find(By.XPath($"//button[@id='{"Btn" + action}']")).EClick();
+            WElement.Find(By.XPath($"//button[@id='{"Btn" + action}']"), driver).EClick();
         }
 
         [Given("I have entered second value is (.*) into the calculator")]
         public void GivenEnterSecondNum(string num)
         {
-            WElement.Find(By.XPath("//input[@id='input']")).InputText(num);
+            WElement.Find(By.XPath("//input[@id='input']"), driver).InputText(num);
         }
 
         [When(@"I press the equals button")]
         public void WhenPressEqualsBtn()
         {
-            WElement.Find(By.XPath("//button[@id='BtnCalc']")).EClick();
+            WElement.Find(By.XPath("//button[@id='BtnCalc']"), driver).EClick();
             Thread.Sleep(1000);
         }
 

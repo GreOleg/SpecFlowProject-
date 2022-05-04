@@ -8,7 +8,11 @@ namespace SpecFlowProject.StepDefinitions
     [Binding]
     class OnlineStoreAddShirtToCartStepDefinitions
     {
-        IWebDriver driver = BrowserDriver.Driver;
+        private readonly IWebDriver driver;
+        public OnlineStoreAddShirtToCartStepDefinitions(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
 
         [Given(@"I open the App")]
         public void GivenOpenApp()
@@ -19,25 +23,25 @@ namespace SpecFlowProject.StepDefinitions
         [When("I enter the \"(.*?)\" in the Search field")]
         public void WhenEnterSearchItem(string searchItem)
         {
-            WElement.Find(By.XPath("//input[@id='search_query_top']")).InputText(searchItem);
+            WElement.Find(By.XPath("//input[@id='search_query_top']"), driver).InputText(searchItem);
         }
 
         [Then("I expect for the element search tooltip \"(.*?)\" to appear")]
         public void ThenExpectElementIntoTooltip(string searchItem)
         {
-            WElement.Find(By.XPath($"//li[contains(text(),'{searchItem}')]")).WaitElement();
+            WElement.Find(By.XPath($"//li[contains(text(),'{searchItem}')]"), driver).WaitElement();
         }
 
         [When("I click on the element search tooltip \"(.*?)\"")]
         public void WhenClickElementIntoTooltip(string searchItem)
         {
-            WElement.Find(By.XPath($"//li[contains(text(),'{searchItem}')]")).EClick();
+            WElement.Find(By.XPath($"//li[contains(text(),'{searchItem}')]"), driver).EClick();
         }
 
         [Then(@"I expect for the product page to appear")]
         public void ThenExpectProductPageToAppear()
         {
-            WElement.Find(By.XPath("//body[@id='product']")).WaitElement();
+            WElement.Find(By.XPath("//body[@id='product']"), driver).WaitElement();
         }
 
         [Then("I expect that the product name is \"(.*?)\"")]
@@ -50,13 +54,13 @@ namespace SpecFlowProject.StepDefinitions
         [When(@"I click on the Add to cart button")]
         public void WhenClickAddToCartBtn()
         {
-            WElement.Find(By.XPath("//p[@id='add_to_cart']/button")).EClick();
+            WElement.Find(By.XPath("//p[@id='add_to_cart']/button"), driver).EClick();
         }
 
         [Then("I expect for the element with the text is \"(.*?)\"")]
         public void ThenExpectElementWithText(string successTitle)
         {
-            WElement.Find(By.XPath($"//h2[normalize-space()='{successTitle}']")).ExpectedConditionsElement();
+            WElement.Find(By.XPath($"//h2[normalize-space()='{successTitle}']"), driver).ExpectedConditionsElement();
             driver.FindElement(By.XPath($"//h2[normalize-space()='{successTitle}']")).Text.Equals(successTitle);
         }
     }

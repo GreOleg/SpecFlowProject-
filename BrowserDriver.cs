@@ -1,32 +1,34 @@
-﻿using OpenQA.Selenium;
+﻿using BoDi;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using TechTalk.SpecFlow;
 
 namespace SpecFlowProject
 {
-    class BrowserDriver
+    [Binding]
+    public class WebDriverHooks
     {
-        private static IWebDriver driver;
-        public static IWebDriver Driver
+        private readonly IObjectContainer container;
+        public WebDriverHooks(IObjectContainer container)
         {
-            get
-            {
-                if (driver == null)
-                    throw new NullReferenceException("The WebDriver browser instance was not initialized. You should first call the method InitBrowser.");
-                return driver;
-            }
-            private set
-            {
-                driver = value;
-            }
+            this.container = container;
         }
-        public static void InitBrowser()
+        [BeforeScenario]
+        public void CreateWebDriver()
         {
-            Driver = new ChromeDriver();
-            Driver.Manage().Window.Maximize();
+            ChromeDriver driver = new ChromeDriver();
+            container.RegisterInstanceAs<IWebDriver>(driver);
         }
-        public static void CloseBrowser()
+        [AfterScenario]
+        public void DestroyWebDriver()
         {
-            Driver.Quit();
+            var driver = container.Resolve<IWebDriver>();
+
+            if (driver != null)
+            {
+                //driver.Quit();
+                //driver.Dispose();
+            }
         }
     }
 }
