@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Features"
+    "\\Features",
+    "\\Helpers"
   ],
   "SelectedNode": "\\SpecFlowProject.sln",
   "PreviewInSolutionExplorer": false

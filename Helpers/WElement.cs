@@ -8,8 +8,6 @@ namespace SpecFlowProject.Helpers
 {
     class WElement
     {
-        //public static IWebDriver driver = BrowserDriver.Driver;
-
         private By selector;
         private readonly IWebDriver driver;
         public WElement(By selector, IWebDriver driver)
