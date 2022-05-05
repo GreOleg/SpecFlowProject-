@@ -1,4 +1,5 @@
 ﻿using BoDi;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
@@ -6,6 +7,7 @@ using TechTalk.SpecFlow;
 namespace SpecFlowProject
 {
     [Binding]
+    [Parallelizable(ParallelScope.All)]
     public class WebDriverHooks
     {
         private readonly IObjectContainer container;
@@ -23,7 +25,6 @@ namespace SpecFlowProject
         public void DestroyWebDriver()
         {
             var driver = container.Resolve<IWebDriver>();
-
             if (driver != null)
             {
                 driver.Quit();

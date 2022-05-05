@@ -6,6 +6,7 @@ using TechTalk.SpecFlow;
 namespace SpecFlowProject.StepDefinitions
 {
     [Binding]
+    [Parallelizable(ParallelScope.All)]
     class OnlineStoreAddShirtToCartStepDefinitions
     {
         private readonly IWebDriver driver;
