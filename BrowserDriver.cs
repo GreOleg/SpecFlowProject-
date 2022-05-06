@@ -4,10 +4,11 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
 
+[assembly: Parallelizable(ParallelScope.Fixtures)]
+[assembly: LevelOfParallelism(4)]
 namespace SpecFlowProject
 {
     [Binding]
-    [Parallelizable(ParallelScope.All)]
     public class WebDriverHooks
     {
         private readonly IObjectContainer container;

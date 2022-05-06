@@ -11,7 +11,6 @@ namespace SpecFlowProject
         {
             return Faker.Internet.Email();
         }
-
         [StepArgumentTransformation(@"(.*) data")]
         public Dictionary<string, string> UserDataTransforms(string expression)
         {

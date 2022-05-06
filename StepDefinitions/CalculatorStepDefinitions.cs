@@ -4,9 +4,9 @@ using SpecFlowProject.Helpers;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowProject.StepDefinitions
-{   
+{
     [Binding]
-    [Parallelizable(ParallelScope.All)]
+    //[Parallelizable(ParallelScope.All)]
     internal class CalculatorStepDefinitions
     {
         private readonly IWebDriver driver;

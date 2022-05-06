@@ -1,8 +1,5 @@
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
 using SpecFlowProject.Helpers;
-using System;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowProject.StepDefinitions
