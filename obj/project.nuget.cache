@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KJSUOYpP8For5nedNksuzqEcvIHb8q+vfX6WOEX+MBpBT7WUSs42RrCFPYSnSlZFDN9WRxPnI1SB6ksNiY9myQ==",
+  "dgSpecHash": "Zg783TjhY6wNzE/OM3yMRuqi0zZ2d8Rwbp8EI4XWZA0cEOST50Qfv2BJVyMr5Axzpjyn8VjjBAFVcoC573KFwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahresik\\Documents\\exadel\\mentoring-tasks-project\\SpecFlowProject\\SpecFlowProject.csproj",
   "expectedPackageFiles": [
@@ -43,12 +43,12 @@
     "C:\\Users\\ahresik\\.nuget\\packages\\selenium.support\\4.1.1\\selenium.support.4.1.1.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\selenium.webdriver\\4.1.1\\selenium.webdriver.4.1.1.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\selenium.webdriver.chromedriver\\101.0.4951.4100\\selenium.webdriver.chromedriver.101.0.4951.4100.nupkg.sha512",
-    "C:\\Users\\ahresik\\.nuget\\packages\\specflow\\3.9.69\\specflow.3.9.69.nupkg.sha512",
+    "C:\\Users\\ahresik\\.nuget\\packages\\specflow\\3.9.74\\specflow.3.9.74.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\specflow.assist.dynamic\\1.4.2\\specflow.assist.dynamic.1.4.2.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",
-    "C:\\Users\\ahresik\\.nuget\\packages\\specflow.nunit\\3.9.69\\specflow.nunit.3.9.69.nupkg.sha512",
+    "C:\\Users\\ahresik\\.nuget\\packages\\specflow.nunit\\3.9.74\\specflow.nunit.3.9.74.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\specflow.plus.livingdocplugin\\3.9.57\\specflow.plus.livingdocplugin.3.9.57.nupkg.sha512",
-    "C:\\Users\\ahresik\\.nuget\\packages\\specflow.tools.msbuild.generation\\3.9.69\\specflow.tools.msbuild.generation.3.9.69.nupkg.sha512",
+    "C:\\Users\\ahresik\\.nuget\\packages\\specflow.tools.msbuild.generation\\3.9.74\\specflow.tools.msbuild.generation.3.9.74.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\ahresik\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

@@ -18,9 +18,9 @@
           "Selenium.Support": "4.1.1",
           "Selenium.WebDriver": "4.1.1",
           "Selenium.WebDriver.ChromeDriver": "101.0.4951.4100",
-          "SpecFlow": "3.9.69",
+          "SpecFlow": "3.9.74",
           "SpecFlow.Assist.Dynamic": "1.4.2",
-          "SpecFlow.NUnit": "3.9.69",
+          "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "NUnit": "3.13.3"
         },
@@ -498,7 +498,7 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/101.0.4951.4100": {},
-      "SpecFlow/3.9.69": {
+      "SpecFlow/3.9.74": {
         "dependencies": {
           "BoDi": "1.5.0",
           "Gherkin": "19.0.3",
@@ -511,14 +511,14 @@
         "runtime": {
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {
             "assemblyVersion": "3.9.0.0",
-            "fileVersion": "3.9.69.5214"
+            "fileVersion": "3.9.74.14555"
           }
         }
       },
       "SpecFlow.Assist.Dynamic/1.4.2": {
         "dependencies": {
           "Dynamitey": "2.0.9.136",
-          "SpecFlow": "3.9.69"
+          "SpecFlow": "3.9.74"
         },
         "runtime": {
           "lib/netstandard2.0/SpecFlow.Assist.Dynamic.dll": {
@@ -535,24 +535,24 @@
           }
         }
       },
-      "SpecFlow.NUnit/3.9.69": {
+      "SpecFlow.NUnit/3.9.74": {
         "dependencies": {
           "NUnit": "3.13.3",
-          "SpecFlow": "3.9.69",
-          "SpecFlow.Tools.MsBuild.Generation": "3.9.69"
+          "SpecFlow": "3.9.74",
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.74"
         },
         "runtime": {
           "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {
             "assemblyVersion": "3.9.0.0",
-            "fileVersion": "3.9.69.5214"
+            "fileVersion": "3.9.74.14555"
           }
         }
       },
       "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
         "dependencies": {
-          "SpecFlow": "3.9.69",
+          "SpecFlow": "3.9.74",
           "SpecFlow.Internal.Json": "1.0.8",
-          "SpecFlow.Tools.MsBuild.Generation": "3.9.69"
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.74"
         },
         "runtime": {
           "lib/netstandard2.0/LivingDoc.Dtos.dll": {
@@ -565,9 +565,9 @@
           }
         }
       },
-      "SpecFlow.Tools.MsBuild.Generation/3.9.69": {
+      "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
         "dependencies": {
-          "SpecFlow": "3.9.69"
+          "SpecFlow": "3.9.74"
         }
       },
       "System.AppContext/4.1.0": {
@@ -1365,12 +1365,12 @@
       "path": "selenium.webdriver.chromedriver/101.0.4951.4100",
       "hashPath": "selenium.webdriver.chromedriver.101.0.4951.4100.nupkg.sha512"
     },
-    "SpecFlow/3.9.69": {
+    "SpecFlow/3.9.74": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qp9QJhy9QMA/xdgr9rVzuUF/Jhn/D3Y7KEVnRxcygxaJTFmXSkApURV8wo8hj0Iyud5uh/3vYdilMKvufAbRVg==",
-      "path": "specflow/3.9.69",
-      "hashPath": "specflow.3.9.69.nupkg.sha512"
+      "sha512": "sha512-n6kcg9ZeQWxqJFoT23SsFT89U1QQNwvcN9pAX5alB6ZPr6K0p5D5nGIJ1PZsSaFaRFutiwQ+DicmxBCPAZVYIA==",
+      "path": "specflow/3.9.74",
+      "hashPath": "specflow.3.9.74.nupkg.sha512"
     },
     "SpecFlow.Assist.Dynamic/1.4.2": {
       "type": "package",
@@ -1386,12 +1386,12 @@
       "path": "specflow.internal.json/1.0.8",
       "hashPath": "specflow.internal.json.1.0.8.nupkg.sha512"
     },
-    "SpecFlow.NUnit/3.9.69": {
+    "SpecFlow.NUnit/3.9.74": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lH4iCgJy4C6svKivCyPqmWcb9b7NJ6HB+ht/8cNOqkpaEJFcVvzO19uvvAS/LeTSd+zTQQpvOXbB/kCAXdTlhA==",
-      "path": "specflow.nunit/3.9.69",
-      "hashPath": "specflow.nunit.3.9.69.nupkg.sha512"
+      "sha512": "sha512-nMPLztTT5IZDMnvNCUxklqaM+agn4kjuNy/qAcYQQOxau2G1MF73UxhL9OXjJQaEuPuyT8gJvXudOYCFZWztxA==",
+      "path": "specflow.nunit/3.9.74",
+      "hashPath": "specflow.nunit.3.9.74.nupkg.sha512"
     },
     "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
       "type": "package",
@@ -1400,12 +1400,12 @@
       "path": "specflow.plus.livingdocplugin/3.9.57",
       "hashPath": "specflow.plus.livingdocplugin.3.9.57.nupkg.sha512"
     },
-    "SpecFlow.Tools.MsBuild.Generation/3.9.69": {
+    "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wdU/ppTLfccr6wm5gq2htNBaaOvnGfnvPkgmNpTWghvBnkKKRXOPxzpttxsoqQbEFt9xjcHP4BKOZcacvCY08A==",
-      "path": "specflow.tools.msbuild.generation/3.9.69",
-      "hashPath": "specflow.tools.msbuild.generation.3.9.69.nupkg.sha512"
+      "sha512": "sha512-I/9OvmKOohJqIUNJ0xGYJCWfL6WKDaes8OoOAD/2yhGX+tzC5ofs9yqkP9Cu/xfnIx+11IR3pZs7YhBhGAcgWQ==",
+      "path": "specflow.tools.msbuild.generation/3.9.74",
+      "hashPath": "specflow.tools.msbuild.generation.3.9.74.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
