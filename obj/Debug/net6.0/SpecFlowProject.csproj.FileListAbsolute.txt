@@ -135,6 +135,7 @@ C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\De
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\BoDi.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\Dynamitey.dll
+C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\Faker.Net.6.0.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\FluentAssertions.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\Gherkin.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -158,6 +159,7 @@ C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\De
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\de-DE\Faker.Net.6.0.resources.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\ahresik\Documents\exadel\mentoring-tasks-project\SpecFlowProject\bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll

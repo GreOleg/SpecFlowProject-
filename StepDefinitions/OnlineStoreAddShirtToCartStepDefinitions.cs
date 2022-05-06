@@ -61,7 +61,7 @@ namespace SpecFlowProject.StepDefinitions
         [Then("I expect for the element with the text is \"(.*?)\"")]
         public void ThenExpectElementWithText(string successTitle)
         {
-            WElement.Find(By.XPath($"//h2[normalize-space()='{successTitle}']"), driver).ExpectedConditionsElement();
+            WElement.Find(By.XPath($"//h2[normalize-space()='{successTitle}']"), driver).ExpectedConditionsElementVisibleAndClickable();
             driver.FindElement(By.XPath($"//h2[normalize-space()='{successTitle}']")).Text.Equals(successTitle);
         }
     }

@@ -9,6 +9,7 @@
       "SpecFlowProject/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
+          "Faker.Net": "2.0.154",
           "FluentAssertions": "6.6.0",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "NLog": "4.7.15",
@@ -49,13 +50,29 @@
       "Dynamitey/2.0.9.136": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.1",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "System.ComponentModel": "4.3.0"
         },
         "runtime": {
           "lib/netstandard1.5/Dynamitey.dll": {
             "assemblyVersion": "2.0.9.136",
             "fileVersion": "2.0.9.136"
+          }
+        }
+      },
+      "Faker.Net/2.0.154": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/net60/Faker.Net.6.0.dll": {
+            "assemblyVersion": "2.0.154.0",
+            "fileVersion": "2.0.154.0"
+          }
+        },
+        "resources": {
+          "lib/net60/de-DE/Faker.Net.6.0.resources.dll": {
+            "locale": "de-DE"
           }
         }
       },
@@ -375,7 +392,7 @@
           }
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
@@ -406,7 +423,7 @@
       },
       "NUnit/3.13.3": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0"
+          "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/nunit.framework.dll": {
@@ -1096,6 +1113,13 @@
       "path": "dynamitey/2.0.9.136",
       "hashPath": "dynamitey.2.0.9.136.nupkg.sha512"
     },
+    "Faker.Net/2.0.154": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkabhT7wxNR1gkPO6ga77XdeqBblaE8a1oY47eMGGvM7DMZ9S8ARZrKkRWaPUNjGCOqtH3oeQSMuEPxd98ir4w==",
+      "path": "faker.net/2.0.154",
+      "hashPath": "faker.net.2.0.154.nupkg.sha512"
+    },
     "FluentAssertions/6.6.0": {
       "type": "package",
       "serviceable": true,
@@ -1173,12 +1197,12 @@
       "path": "microsoft.testplatform.testhost/17.1.0",
       "hashPath": "microsoft.testplatform.testhost.17.1.0.nupkg.sha512"
     },
-    "NETStandard.Library/2.0.0": {
+    "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
-      "path": "netstandard.library/2.0.0",
-      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",

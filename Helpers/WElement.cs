@@ -61,10 +61,19 @@ namespace SpecFlowProject.Helpers
                 LogManager.GetCurrentClassLogger().Error("Element identified by " + selector.ToString() + " was not visiblee after" + waitInterval + "seconds");
             }
         }
-        public void ExpectedConditionsElement(int waitInterval = 20)
+        public void ExpectedConditionsElementVisibleAndClickable(int waitInterval = 20)
         {
             new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementIsVisible(selector));
             new WebDriverWait(driver, TimeSpan.FromSeconds(waitInterval)).Until(ExpectedConditions.ElementToBeClickable(selector));
         }
+        public static void AssertAndWaitPartOfTitle(string partOfTitle, IWebDriver driver, int interval = 10)
+        {
+            new WebDriverWait(driver, TimeSpan.FromSeconds(interval)).Until(ExpectedConditions.TitleContains(partOfTitle));
+        }
+        public static void AssertAndWaitPartOfUrl(string partOfUrl, IWebDriver driver, int interval = 10)
+        {
+            new WebDriverWait(driver, TimeSpan.FromSeconds(interval)).Until(ExpectedConditions.UrlContains(partOfUrl));
+        }
+        public void SelectValue(string value) => new SelectElement(driver.FindElement(selector)).SelectByValue(value);
     }
 }

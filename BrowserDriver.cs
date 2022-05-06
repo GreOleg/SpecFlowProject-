@@ -20,6 +20,7 @@ namespace SpecFlowProject
         {
             ChromeDriver driver = new ChromeDriver();
             container.RegisterInstanceAs<IWebDriver>(driver);
+            driver.Manage().Window.Maximize();
         }
         [AfterScenario]
         public void DestroyWebDriver()
